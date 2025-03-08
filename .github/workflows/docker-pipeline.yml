@@ -1,17 +1,17 @@
-name: docker-pipeline-vishal
+name: docker-pipeline-gowtham
 on: push
 jobs:
   docker-job:
     runs-on: ubuntu-latest
     steps:
       - name: print your Register Number
-        run: echo "Hello world - 22it055"
+        run: echo "Hello world - 22it010"
 
       - name: Checkout
         uses: actions/checkout@v4
 
       - name: Docker Build
-        run: docker build -t vishalv2004/ml-model-22it055 .
+        run: docker build -t gowtham0112/ml-model-22it010             .
 
       - name: Docker Images
         run: docker images
