@@ -1,0 +1,19 @@
+name: docker-pipeline-gowtham
+on: push
+jobs:
+  my-jobs:
+     runs-on: ubuntu-latest
+     steps:
+       - name: print your Register Number
+         run: echo "Hello World - 22it010"
+
+       - name: Checkout
+         uses: actions/checkout@v4
+
+       - name: Docker Build
+         run: docker build -t gowthams0112
+
+       - name: Docker Images
+         run: docker images
+
+         
